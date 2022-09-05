@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @@include('_header.html')
+
+    <!-- first-screen------------------------------------------------------- -->
+    <section class="first-screen">
+        <div class="container">
+            <h1 class="first-screen__title">ВНУТРИ ЦВЕТЫ</h1>
+            <p class="first-screen__subtitle">СДЕЛАНО С ЛЮБОВЬЮ</p>
+            <button class="first-screen__btn">ЗАКАЗАТЬ БУКЕТ</button>
+            <ul class="first-screen__list">
+                <li class="first-screen__list-item">ОФОРМЛЕНИЕ МЕРОПРИЯТИЙ</li>
+                <li class="first-screen__list-item">ДЕКОР</li>
+                <li class="first-screen__list-item">ШАРЫ</li>
+                <li class="first-screen__list-item">СВАДЕБНЫЕ БУКЕТЫ</li>
+                <li class="first-screen__list-item">АВТОРСКИЕ БУКЕТЫ</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- catalog------------------------------------------------------- -->
+    <section class="catalog">
+        <div class="container">
+            <h2 class="catalog__title h2">Каталог букетов</h2>
+            <div class="catalog__box">
+                @@loop('./components/card-catalog/card-catalog.html', './components/card-catalog/card-catalog.json')
+            </div>
+            <a href="#!" class="catalog__btn">ПОСМОТРЕТЬ ВСЕ БУКЕТЫ</a>
+        </div>
+    </section>
+
+    <!-- types------------------------------------------------------- -->
+    <section class="types">
+        <div class="container">
+            <h2 class="types__title h2">Виды букетов</h2>
+            <div class="types__gallery">
+                <div class="types__card">
+                    <div class="types__card-img-wrap">
+                        <img src="./img/types/types-1.jpg" alt="Виды букетов" class="types__card-img">
+                    </div>
+                    <div class="types__card-content">
+                        <p class="types__card-label">СВАДЕБНЫЕ&nbsp;БУКЕТЫ</p>
+                        <a href="#" class="types__card-btn">В КАТАЛОГ</a>
+                    </div>
+                </div>
+                <div class="types__card">
+                    <div class="types__card-img-wrap">
+                        <img src="./img/types/types-2.jpg" alt="Виды букетов" class="types__card-img">
+                    </div>
+                    <div class="types__card-content">
+                        <p class="types__card-label">МОНОБУКЕТЫ</p>
+                    </div>
+                </div>
+                <div class="types__card">
+                    <div class="types__card-img-wrap">
+                        <img src="./img/types/types-3.jpg" alt="Виды букетов" class="types__card-img">
+                    </div>
+                    <div class="types__card-content">
+                        <p class="types__card-label">“WOW” БУКЕТЫ</p>
+                    </div>
+                </div>
+                <div class="types__card">
+                    <div class="types__card-img-wrap">
+                        <img src="./img/types/types-4.jpg" alt="Виды букетов" class="types__card-img">
+                    </div>
+                    <div class="types__card-content">
+                        <p class="types__card-label">АВТОРСКИЕ БУКЕТЫ</p>
+                    </div>
+                </div>
+                <div class="types__card">
+                    <div class="types__card-img-wrap">
+                        <img src="./img/types/types-5.jpg" alt="Виды букетов" class="types__card-img">
+                    </div>
+                    <div class="types__card-content">
+                        <p class="types__card-label">БУКЕТЫ В КОРОБКАХ</p>
+                    </div>
+                </div>
+                <div class="types__card">
+                    <div class="types__card-img-wrap">
+                        <img src="./img/types/types-6.jpg" alt="Виды букетов" class="types__card-img">
+                    </div>
+                    <div class="types__card-content">
+                        <p class="types__card-label">ЭКСПРЕСС ДОСТАВКА</p>
+                    </div>
+                </div>
+                <div class="types__card">
+                    <div class="types__card-img-wrap">
+                        <img src="./img/types/types-7.jpg" alt="Виды букетов" class="types__card-img">
+                    </div>
+                    <div class="types__card-content">
+                        <p class="types__card-label">ОТКРЫТКИ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- order------------------------------------------------------- -->
+    <section class="order">
+        <div class="order__col order__col--1">
+            <div class="order__container">
+                <h2 class="order__title">ЗАКАЖИТЕ СВОЙ УНИКАЛЬНЫЙ БУКЕТ</h2>
+                <p class="order__text">Наша главная специализация это авторские букеты цветов!
+                    Если Вам не подошло ничего из нашего ассортимента, вы можете собрать букет самостоятельно.</p>
+                <a href="#" class="order__btn">СОБРАТЬ БУКЕТ</a>
+            </div>
+        </div>
+        <div class="order__col order__col--2"></div>
+    </section>
+
+    <!-- advantages------------------------------------------------------- -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="advantages__title h2">НАШИ ПРЕИМУЩЕСТВА</h2>
+            <div class="advantages__box">
+                <div class="advantages__box-item">
+                    <div class="advantages__box-circle">
+                        <div class="advantages__box-number">1</div>
+                    </div>
+                    <h5 class="advantages__box-title">ВСЕГДА СВЕЖИЕ ЦВЕТЫ</h5>
+                    <p class="advantages__box-text">В своих работах мы используем материал высокого качества и
+                        значительное внимание уделяем технологиям правильного хранения цветов.</p>
+                </div>
+                <div class="advantages__box-item">
+                    <div class="advantages__box-circle">
+                        <div class="advantages__box-number">2</div>
+                    </div>
+                    <h5 class="advantages__box-title">КРУГЛОСУТОЧНАЯ ДОСТАВКА</h5>
+                    <p class="advantages__box-text">Мы берем на себя все заботы о доставке цветов. Доставим в любое
+                        время дня и ночи почти 365 дней в году.</p>
+                </div>
+                <div class="advantages__box-item">
+                    <div class="advantages__box-circle">
+                        <div class="advantages__box-number">3</div>
+                    </div>
+                    <h5 class="advantages__box-title">КРУТЫЕ ФЛОРИСТЫ</h5>
+                    <p class="advantages__box-text">У нас супер команда флористов, профессионалы своего дела, помогут с
+                        выбором цветов и составят букет по Вашим пожеланиям.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contacts------------------------------------------------------- -->
+    <section class="contacts">
+        <div class="container">
+            <h2 class="contacts__title h2">КОНТАКТЫ</h2>
+        </div>
+        <div class="contacts__box">
+            <div class="contacts__col contacts__col--1">
+                <div class="contacts__content">
+                    <h4 class="contacts__content-title">НАШИ КООРДИНАТЫ</h4>
+                    <p class="contacts__content-contacts">+7 995 010 14 47 whatsapp
+                        sredin.vadim@yandex.ru</p>
+                    <p class="contacts__content-address">Новосибирская область, г.Новосибирск, ул. Б.Богаткова, 230
+                        есть парковка во дворе</p>
+                    <div class="contacts__content-social">
+                        <a href="#" class="contacts__content-social-item">
+                            <img src="./img/instagram.png" alt="Instagram" class="contacts__content-social-img">
+                        </a>
+                        <a href="#" class="contacts__content-social-item">
+                            <img src="./img/vk.png" alt="VK" class="contacts__content-social-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__col contacts__col--2">
+                <div style="position:relative;overflow:hidden;"><a
+                        href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                        href="https://yandex.ru/maps/213/moscow/house/molochny_pereulok_9s1/Z04Ycw5pTE0PQFtvfXtyeX9qYA==/?ll=37.599588%2C55.738394&utm_medium=mapframe&utm_source=maps&z=16.99"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Молочный переулок, 9с1 —
+                        Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVe4WTpC" width="100%"
+                        height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+        </div>
+    </section>
+
+    @@include('_footer.html')
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

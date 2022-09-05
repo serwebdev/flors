@@ -1,0 +1,37 @@
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+.container-fluid {
+  // max-width: 1920px;
+  // margin: 0 auto;
+}
+
+body.no-scroll {
+  overflow-y: hidden;
+}
+// html,
+// body {
+//   overflow-y: hidden;
+// }
+body {
+  // font-family: 'Bebas Neue', cursive;
+  // font-family: 'Tangerine', cursive;
+  font-family: 'gothampro';
+  font-style: normal;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 48px;
+  color: $black;
+
+  @media (max-width: 500px) {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 21px;
+  }
+}

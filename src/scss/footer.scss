@@ -1,0 +1,57 @@
+.footer {
+  background: rgba(0, 0, 0, 0.8);
+  height: 118px;
+
+  @media (max-width: 900px) {
+    height: 59px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__logo-wrap {
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+    display: flex;
+    gap: 50px;
+
+    @media (max-width: 1100px) {
+      gap: 15px;
+    }
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &__menu-item {
+  }
+
+  &__menu-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 11px;
+    color: $white;
+    text-transform: uppercase;
+    transition: 0.2s;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+
+  &__copyright {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #adadad;
+    text-transform: uppercase;
+  }
+}

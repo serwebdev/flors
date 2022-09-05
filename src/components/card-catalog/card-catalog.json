@@ -1,0 +1,56 @@
+[
+  {
+    "imgCard": "./img/catalog/catalog-1.jpg",
+    "titleCard": "БУКЕТ С АРОМАТНОЙ РОЗОЙ",
+    "textCard": "Cамый нежный микс из 2 сортов невероятных роз",
+    "priceCard": "3500 руб."
+  },
+  {
+    "imgCard": "./img/catalog/catalog-2.jpg",
+    "titleCard": "БУКЕТ С АРОМАТНОЙ РОЗОЙ",
+    "textCard": "Cамый нежный микс из 2 сортов невероятных роз",
+    "priceCard": "4500 руб."
+  },
+  {
+    "imgCard": "./img/catalog/catalog-3.jpg",
+    "titleCard": "БУКЕТ С АРОМАТНОЙ РОЗОЙ",
+    "textCard": "Cамый нежный микс из 2 сортов невероятных роз",
+    "priceCard": "5500 руб."
+  },
+  {
+    "imgCard": "./img/catalog/catalog-4.jpg",
+    "titleCard": "БУКЕТ С АРОМАТНОЙ РОЗОЙ",
+    "textCard": "Cамый нежный микс из 2 сортов невероятных роз",
+    "priceCard": "2500 руб."
+  },
+  {
+    "imgCard": "./img/catalog/catalog-5.jpg",
+    "titleCard": "БУКЕТ С АРОМАТНОЙ РОЗОЙ",
+    "textCard": "Cамый нежный микс из 2 сортов невероятных роз",
+    "priceCard": "7500 руб."
+  },
+  {
+    "imgCard": "./img/catalog/catalog-6.jpg",
+    "titleCard": "БУКЕТ С АРОМАТНОЙ РОЗОЙ",
+    "textCard": "Cамый нежный микс из 2 сортов невероятных роз",
+    "priceCard": "6500 руб."
+  },
+  {
+    "imgCard": "./img/catalog/catalog-7.jpg",
+    "titleCard": "БУКЕТ С АРОМАТНОЙ РОЗОЙ",
+    "textCard": "Cамый нежный микс из 2 сортов невероятных роз",
+    "priceCard": "2500 руб."
+  },
+  {
+    "imgCard": "./img/catalog/catalog-8.jpg",
+    "titleCard": "БУКЕТ С АРОМАТНОЙ РОЗОЙ",
+    "textCard": "Cамый нежный микс из 2 сортов невероятных роз",
+    "priceCard": "2500 руб."
+  },
+  {
+    "imgCard": "./img/catalog/catalog-9.jpg",
+    "titleCard": "БУКЕТ С АРОМАТНОЙ РОЗОЙ",
+    "textCard": "Cамый нежный микс из 2 сортов невероятных роз",
+    "priceCard": "2500 руб."
+  }
+]

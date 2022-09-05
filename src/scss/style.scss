@@ -1,0 +1,13 @@
+// Общие стили
+@import './fonts';
+@import './variables';
+@import './reset';
+@import './global';
+
+// Компоненты
+@import './header';
+@import '../components/card-catalog/card-catalog';
+@import './footer';
+
+// Страницы
+@import './index';

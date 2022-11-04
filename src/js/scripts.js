@@ -3,22 +3,36 @@ const burger = document.querySelector('.header__burger-circle');
 const menu = document.querySelector('.menu');
 const html = document.querySelector('html');
 
-const clientWidth = document.documentElement.clientWidth;
-const widthScrollBody = window.innerWidth - document.body.clientWidth;
-const paddingRightBody = getComputedStyle(header).paddingRight;
+const paddingHeader = 20;
 
 burger.addEventListener('click', () => {
   if (menu.classList.contains('show')) {
     menu.classList.remove('show');
     addScrollBody();
-    header.style.paddingRight = parseInt(paddingRightBody) + 'px';
+    document.body.style.paddingRight = '';
+    // убирает padding-right для header
+    header.style.paddingRight = paddingHeader + 'px';
   } else {
     menu.classList.add('show');
+    // Ширина body до открытия меню
+    const widthBodyBefore = document.body.clientWidth;
     delScrollBody();
-    header.style.paddingRight =
-      parseInt(paddingRightBody) + widthScrollBody + 'px';
+
+    addPaddingBody(widthBodyBefore);
   }
 });
+
+// Добавляет padding-right для body
+function addPaddingBody(widthBodyBefore) {
+  // Ширина body после открытия меню
+  const widthBodyAfter = document.body.clientWidth;
+  // Ширина скролл-бара
+  const widthScroll = widthBodyAfter - widthBodyBefore;
+  // padding-right для body
+  document.body.style.paddingRight = widthScroll + 'px';
+  // padding-right для header
+  header.style.paddingRight = paddingHeader + widthScroll + 'px';
+}
 
 function delScrollBody() {
   document.body.classList.add('no-scroll');

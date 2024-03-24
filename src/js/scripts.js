@@ -40,3 +40,6 @@ function delScrollBody() {
 function addScrollBody() {
   document.body.classList.remove('no-scroll');
 }
+
+// types__gallery==========================================================
+// const typesCardBtn = document.querySelectorAll('.types__card-btn');
